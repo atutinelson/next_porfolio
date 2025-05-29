@@ -20,7 +20,7 @@ const ProjectsPage =  async({projects}:projectProps) => {
 
   
   return (
-   <div>
+   <section id='projects'>
      <p className='text-center'>My Projects</p>
      <div className='w-[90%] mx-auto my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
   
@@ -49,7 +49,7 @@ const ProjectsPage =  async({projects}:projectProps) => {
 
      
     </div>
-   </div>
+   </section>
   )
 }
 

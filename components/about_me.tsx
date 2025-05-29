@@ -8,7 +8,7 @@ const montserrat = Montserrat({
 
 const AboutMe = () => {
   return (
-    <div className='p-4 mx-auto lg:max-w-7xl md:max-w-4xl flex  flex-col  justify-center'>
+    <section id="about" className='p-4 mx-auto lg:max-w-7xl md:max-w-4xl flex  flex-col  justify-center'>
       <h1 className='text-2xl'>About Me</h1>
         <p className={`leading-loose mt-10 mb-10`}>
             I'm a passionate and detail-oriented software developer with a strong focus on building scalable, 
@@ -21,7 +21,7 @@ With experience in both frontend and backend development, I specialize in creati
 Whether working independently or collaborating with cross-functional teams, I take pride in writing clean,
  maintainable code and delivering projects that add real value. I'm always excited to take on new challenges, 
  contribute to innovative products, and grow as a developer.</p>
-    </div>
+    </section>
   )
 }
 

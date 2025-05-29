@@ -2,6 +2,7 @@ import type { Metadata ,Viewport} from "next";
 import { Geist, Geist_Mono, Montserrat, } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "react-hot-toast";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -44,7 +45,7 @@ export default function RootLayout({
           >
             {children}
         </ThemeProvider>
-        
+        <Toaster position="bottom-right"/> 
       </body>
     </html>
   );

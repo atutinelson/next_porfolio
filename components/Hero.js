@@ -5,12 +5,13 @@ import { Spotlight } from './ui/Spotlight';
 import { Montserrat, Bokor} from 'next/font/google';
 
 import MagicButton from './ui/MagicButton';
-import {FaArrowDown, FaDownload, FaTiktok, FaTwitterSquare} from "react-icons/fa"
+import {FaArrowDown, FaDownload, FaReceipt, FaShare, FaTelegram, FaTiktok, FaTwitterSquare} from "react-icons/fa"
 import { TooltipDemo } from './toolTip';
 import { BsFacebook, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 import { CodeBlock } from './ui/code_block';
 import { CodeBlocks } from './codeBlocks';
 import { ThreeDMarquee } from './ui/3d_marquee';
+import Bottomsheet from './sheet';
 
 const montserrat = Montserrat({
   subsets:['latin'],
@@ -23,7 +24,7 @@ const Hero = () => {
    
   return (
     
-     <div className='relative w-full  h-screen'>  
+     <section className='relative w-full  h-screen'>  
       <div className='absolute left-0 right-0 top-[40%] md:top-0 bottom-0 p-4 mx-auto lg:max-w-7xl md:max-w-4xl flex items-center justify-center'>
         <div className='flex flex-col lg:flex-row w-full h-screen justify-between items-center container mx-auto'>
          <div className='flex-1 justify-start'>
@@ -38,13 +39,14 @@ const Hero = () => {
                  <p className='text-white text-xs font-semibold tracking-widest'>Let’s build something powerful—together</p> 
               </div>
            </div>
-           <h1 className={`text-5xl mt-8 font-semibold capitalize brightness-100`}>I'M NELSON NYABUTI</h1>
+           <h1 className={`text-5xl mt-8 font-semibold capitalize brightness-100`}>I&apos;M NELSON NYABUTI</h1>
            <p className={`text-[#f5f8fc] mt-4 leading-loose text-sm`}>
             I'm a Kenyan-based Software Developer passionate about building robust web, mobile, and cloud-based applications that solve real-world problems.
            </p>
             <div className='mt-8 flex gap-8'>
-                <MagicButton text="More About Me" icon={<FaArrowDown/>}/>
-                <MagicButton text="My Resume" icon={<FaDownload/>}/>
+                <a href='#about'><MagicButton  text="More About Me" icon={<FaArrowDown/>}/></a>
+                <Bottomsheet trigger={<a><MagicButton text="Request Resume" icon={<FaTelegram/>}/></a>}/>
+                
             </div>
             <div className='mt-10'>
                 <div className='flex gap-3'>
@@ -56,25 +58,29 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-        <div className='flex-1 md:mt-[40%]'>
+        <div className="flex-1 mt-10 md:mt-[40%] px-4">
+            <div
+               style={{
+               transformStyle: "preserve-3d",
+               transform: "rotateY(-20deg) rotateX(60deg)",
+                perspective: "1000px",
+              }}
+            className="relative backdrop-blur-md bg-white/5 shadow-lg rounded-md overflow-hidden p-4 max-w-full"
+           >
+          <div className="overflow-x-auto">
+            <CodeBlocks />
            
-           <div
-             style={{
-             transformStyle: "preserve-3d",
-             transform: "rotateY(-20deg) rotateX(60deg)",
-             perspective: "1000px"
-            }}
-            className='relative right-1.5 backdrop-blur-md bg-white/5  shadow-lg rounded-md overflow-hidden p-4'>
-             <CodeBlocks/>
-             <div className='text-center z-20 absolute top-[50%] left-10 rounded-lg p-2 w-fit backdrop-blur-md bg-white/20 animate-bounce border border-gray-500'>
-              <p>Hello world</p>
-             </div>
            </div>
-           
+
+           {/* Overlay Text */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 rounded-lg p-2 w-fit backdrop-blur-md bg-white/20 animate-bounce border border-gray-500 text-center">
+            <p className="text-sm sm:text-base">Hello world</p>
+         </div>
+          </div>
         </div>
         </div>
       </div>
-    </div>
+    </section>
   );
   
 }

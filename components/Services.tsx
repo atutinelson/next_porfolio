@@ -30,7 +30,7 @@ const services =[
 
 const Services = () => {
   return (
-    <div className='mt-20'>
+    <section id="services" className='mt-20'>
         <div className='w-fit mx-auto flex flex-col items-center'>
             <h1 className=' md:text-2xl animate-pulse '>SOFTWARE DEVELOPMENT IN KENYA</h1>
             <p className='text-sm capitalize mt-4 text-gray-400'>what i do</p>
@@ -42,7 +42,7 @@ const Services = () => {
             </div>
         ))}
     </div>
-    </div>
+    </section>
   )
 }
 

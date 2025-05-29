@@ -45,7 +45,7 @@ const items1=[
 const TechSection = () => {
   return (
     
-    <div className='p-4 mx-auto lg:max-w-7xl md:max-w-4xl flex  flex-col  justify-center my-30'>
+    <section id="skills" className='p-4 mx-auto lg:max-w-7xl md:max-w-4xl flex  flex-col  justify-center my-30'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-4'>
           <div className='flex flex-col justify-between'>
             
@@ -63,7 +63,7 @@ const TechSection = () => {
             <HoverEffect items={items1} />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
