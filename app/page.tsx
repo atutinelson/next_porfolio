@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Hero from "@/components/Hero"
 import Navbar from "@/components/Navbar";
 import { cn } from "@/lib/utils";
@@ -7,8 +7,6 @@ import Services from "@/components/Services";
 import Footer from "@/components/Footer";
 import TechSection from "@/components/TechSection";
 
-
-import Projects from "@/components/projects";
 import { getAllProjects } from "@/sanity/lib/projects/getAllProjects";
 import ProjectsPage from "@/components/projects";
 import AboutMe from "@/components/about_me";

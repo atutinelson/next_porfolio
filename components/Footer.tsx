@@ -37,8 +37,8 @@ const Footer = () => {
                 </div>
             </div>
             <div className='flex flex-col gap-4'>
-                <h1 className='font-bold'>Subscribe to Nelson's blog newsletter</h1>
-                <p className='text-sm text-gray-400'>Don't miss out 😉. Get an email whenever I post, no spam.</p>
+                <h1 className='font-bold'>Subscribe to Nelson&apos;s blog newsletter</h1>
+                <p className='text-sm text-gray-400'>Don&apos;t miss out 😉. Get an email whenever I post, no spam.</p>
                 <div className='border flex w-fit px-2 items-center gap-4 py-2'>
                     <p className='text-gray-400'>Subscribe Now</p>
                     <div className='bg-white/50 p-1 rounded-sm'>

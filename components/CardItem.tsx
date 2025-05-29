@@ -12,9 +12,9 @@ import {
  interface CardItemProps {
   title:string,
   description:string,
-  icon:React.ReactNode
+  
  }
-const CardItem = ({title, description, icon}:CardItemProps) => {
+const CardItem = ({title, description}:CardItemProps) => {
   return (
     <Card className='transition-shadow shadow-white shadow-lg'>
   <CardHeader>

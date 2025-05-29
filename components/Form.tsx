@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form'
 import {
   Form,
   FormControl,
-  FormDescription,
+
   FormField,
   FormItem,
   FormLabel,
@@ -17,7 +17,7 @@ import { Input } from "./ui/input"
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import sendEmail from './sendEmail'
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 
 const formSchema = z.object({
@@ -46,6 +46,7 @@ function onSubmit(values:z.infer<typeof formSchema>){
       form.reset()
      
     } catch (error) {
+      console.log(error)
       toast.error("Failed to send message.")
       
     }

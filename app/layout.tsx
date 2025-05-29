@@ -1,5 +1,5 @@
 import type { Metadata ,Viewport} from "next";
-import { Geist, Geist_Mono, Montserrat, } from "next/font/google";
+import {Montserrat} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "react-hot-toast";
