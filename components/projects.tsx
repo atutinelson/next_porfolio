@@ -1,14 +1,8 @@
 
 import { Projects } from '@/sanity.types';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+
  import {Card, CardContent} from '@/components/ui/card'
-import { getAllProjects } from '@/sanity/lib/projects/getAllProjects';
+
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 
 interface projectProps{
@@ -16,7 +10,7 @@ interface projectProps{
 }
 
 const ProjectsPage =  async({projects}:projectProps) => {
-  console.log(projects)
+  
 
   
   return (
@@ -25,7 +19,7 @@ const ProjectsPage =  async({projects}:projectProps) => {
      <div className='w-[90%] mx-auto my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
   
        {
-        projects.map((item,index)=>{
+        projects.map((item)=>{
           return(
           
             <Card key={item._id} className='hover:shadow-lg shadow-white'>

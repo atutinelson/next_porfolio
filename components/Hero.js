@@ -1,23 +1,18 @@
 "use client"
 import React from 'react'
-import { cn } from "@/lib/utils";
-import { Spotlight } from './ui/Spotlight';
-import { Montserrat, Bokor} from 'next/font/google';
+
+import { Montserrat} from 'next/font/google';
 
 import MagicButton from './ui/MagicButton';
-import {FaArrowDown, FaDownload, FaReceipt, FaShare, FaTelegram, FaTiktok, FaTwitterSquare} from "react-icons/fa"
+import {FaArrowDown, FaTelegram, FaTiktok} from "react-icons/fa"
 import { TooltipDemo } from './toolTip';
 import { BsFacebook, BsTwitter, BsWhatsapp } from 'react-icons/bs';
-import { CodeBlock } from './ui/code_block';
+
 import { CodeBlocks } from './codeBlocks';
-import { ThreeDMarquee } from './ui/3d_marquee';
+
 import Bottomsheet from './sheet';
 
-const montserrat = Montserrat({
-  subsets:['latin'],
-  weight:"400",
-  
-})
+
 
 
 const Hero = () => {
@@ -36,12 +31,12 @@ const Hero = () => {
                     viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.378 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.378 2.455c-.784.57-1.838-.197-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.628 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 00.951-.69l1.286-3.967z" />
                  </svg>
-                 <p className='text-white text-xs font-semibold tracking-widest'>Let’s build something powerful—together</p> 
+                 <p className='text-white text-xs font-semibold tracking-widest'>Let&apos;s build something powerful—together</p> 
               </div>
            </div>
            <h1 className={`text-5xl mt-8 font-semibold capitalize brightness-100`}>I&apos;M NELSON NYABUTI</h1>
            <p className={`text-[#f5f8fc] mt-4 leading-loose text-sm`}>
-            I'm a Kenyan-based Software Developer passionate about building robust web, mobile, and cloud-based applications that solve real-world problems.
+            I&apos;m a Kenyan-based Software Developer passionate about building robust web, mobile, and cloud-based applications that solve real-world problems.
            </p>
             <div className='mt-8 flex gap-8'>
                 <a href='#about'><MagicButton  text="More About Me" icon={<FaArrowDown/>}/></a>

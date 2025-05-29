@@ -2,8 +2,7 @@
 
 import React from 'react'
 import { HoverEffect } from './ui/card_hover_card'
-import { FaJava, FaPython, FaReact } from 'react-icons/fa'
-import { FaFlutter } from 'react-icons/fa6'
+
 
 const items1=[
     {
@@ -53,7 +52,7 @@ const TechSection = () => {
             <p className='uppercase text-sm'>My Tech Skills</p>
             <h1 className='text-4xl font-bold'>Explore <span className='text-gradient-to-r from-blue-600 to-blue-50'>premium </span>
             software solutions and cutting-edge technologies from a skilled Kenyan developer.</h1>
-            <p className='text-sm leading-loose'>OMy skills represent the pinnacle of quality, crafted from the most powerful programming languages and technologies worldwide..</p>
+            <p className='text-sm leading-loose'>My skills represent the pinnacle of quality, crafted from the most powerful programming languages and technologies worldwide..</p>
             </div>
             <div className='bg-[#03a9f4]  mx-4 text-center py-2 rounded-md'>
                 <p className='font-medium'>Expore skills  </p>

@@ -38,7 +38,7 @@ const Services = () => {
         <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-5 gap-8 container mx-auto'>
         {services.map((service, index)=>(
             <div key={index}>
-                <CardItem title={service.title} description={service.description} icon={service.icon}/>
+                <CardItem title={service.title} description={service.description} />
             </div>
         ))}
     </div>
