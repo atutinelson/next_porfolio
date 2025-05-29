@@ -1,10 +1,6 @@
 import React from 'react'
-import { Montserrat } from 'next/font/google'
-const montserrat = Montserrat({
-  subsets:['latin'],
-  weight:"400",
-  
-})
+
+
 
 const AboutMe = () => {
   return (
@@ -19,7 +15,7 @@ With experience in both frontend and backend development, I specialize in creati
  <span className='font-bold mx-2 text-[#03a9f4] '>[ JavaScript, React, Flutter, Django, Node.js, Firebase, Tailwind css,Python, Next js ]</span> 
 , and I&apos;m constantly learning and experimenting with new tools to stay ahead in this fast-paced industry.
 Whether working independently or collaborating with cross-functional teams, I take pride in writing clean,
- maintainable code and delivering projects that add real value. I'm always excited to take on new challenges, 
+ maintainable code and delivering projects that add real value. I&apos;m always excited to take on new challenges, 
  contribute to innovative products, and grow as a developer.</p>
     </section>
   )
