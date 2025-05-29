@@ -10,7 +10,7 @@ resend.emails.send({
   from: 'onboarding@resend.dev',
   to: 'nelsonatuti27@gmail.com',
   subject: 'Hello World',
-  text: message
+  text: send_message
 });
   
 }

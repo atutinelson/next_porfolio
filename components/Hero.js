@@ -1,8 +1,6 @@
 "use client"
 import React from 'react'
 
-import { Montserrat} from 'next/font/google';
-
 import MagicButton from './ui/MagicButton';
 import {FaArrowDown, FaTelegram, FaTiktok} from "react-icons/fa"
 import { TooltipDemo } from './toolTip';
@@ -47,7 +45,7 @@ const Hero = () => {
                 <div className='flex gap-3'>
                    <a href='https://www.tiktok.com/@dev_nelly' target="_blank"><TooltipDemo icon={<FaTiktok className='text-white/50'/>} text='Tiktok'/></a> 
                     <TooltipDemo icon={<BsTwitter className='text-white/50 cursor-crosshair'/>} text='Twitter'/>
-                   <a href='https://wa.me/254791315487' target="_blank"><TooltipDemo icon={<BsWhatsapp className='text-white/50 cursor-crosshair'/>} text="What'sapp"/></a> 
+                   <a href='https://wa.me/254791315487' target="_blank"><TooltipDemo icon={<BsWhatsapp className='text-white/50 cursor-crosshair'/>} text="What`&apos;sapp"/></a> 
                     <TooltipDemo icon={<BsFacebook className='text-white/50 cursor-crosshair'/>} text='Facebook'/>
 
                 </div>
