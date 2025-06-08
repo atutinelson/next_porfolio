@@ -37,7 +37,9 @@ const Hero = () => {
             I&apos;m a Kenyan-based Software Developer passionate about building robust web, mobile, and cloud-based applications that solve real-world problems.
            </p>
             <div className='mt-8 flex gap-8'>
-                <a href='https://docs.google.com/document/d/1CiPViUjXKy-zE8Y2t_Svbsapnegrf_y1/edit'><MagicButton  text="View Resume" icon={<FaArrowDown/>}/></a>
+                <a href='https://docs.google.com/document/d/1CiPViUjXKy-zE8Y2t_Svbsapnegrf_y1/edit'
+                target='_blank'
+                ><MagicButton  text="View Resume" icon={<FaArrowDown/>}/></a>
                 <Bottomsheet trigger={<a><MagicButton text="Request Resume" icon={<FaTelegram/>}/></a>}/>
                 
             </div>
