@@ -12,6 +12,7 @@ import ProjectsPage from "@/components/projects";
 import AboutMe from "@/components/about_me";
 import { Montserrat } from "next/font/google";
 import { FaWhatsapp } from "react-icons/fa";
+import Corporate from "@/components/let_corparate";
 
 const montserrat = Montserrat({
     subsets:['latin'],
@@ -47,6 +48,7 @@ export default  async function Home() {
         <AboutMe/>
         <Services/>
         <TechSection/>
+        <Corporate/>
         <ProjectsPage projects={project}/>
         <Footer/>
       </div>

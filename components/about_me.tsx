@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <section id="about" className='p-4 mx-auto lg:max-w-7xl md:max-w-4xl flex  flex-col  justify-center'>
       <h1 className='text-2xl'>About Me</h1>
-        <p className={`leading-loose mt-10 mb-10`}>
+        <p className={`leading-loose mt-10 mb-10 text-sm`}>
             I&apos;m a passionate and detail-oriented software developer with a strong focus on building scalable, 
             user-friendly applications. I enjoy solving complex problems and turning ideas into efficient,
              practical solutions using modern technologies.

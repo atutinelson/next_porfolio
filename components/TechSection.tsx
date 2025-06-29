@@ -54,7 +54,7 @@ const TechSection = () => {
             software solutions and cutting-edge technologies from a skilled Kenyan developer.</h1>
             <p className='text-sm leading-loose'>My skills represent the pinnacle of quality, crafted from the most powerful programming languages and technologies worldwide..</p>
             </div>
-            <div className='bg-[#03a9f4]  mx-4 text-center py-2 rounded-md'>
+            <div className='bg-[#03a9f4] mt-2 text-center py-2 rounded-md'>
                 <p className='font-medium'>Expore skills  </p>
             </div>
         </div>
