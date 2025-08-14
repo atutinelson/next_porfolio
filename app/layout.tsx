@@ -25,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      
+      <head>
+        <meta name="algolia-site-verification"  content="584FC764E7F98FD5" />
+      </head>
       <body
         className={`${montserrat.variable} antialiased`}
       >
